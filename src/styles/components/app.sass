@@ -1,0 +1,19 @@
+@use '../mixin'
+@use '../variables'
+
+* 
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: variables.$font
+    
+body
+    height: 100vh
+    @include mixin.center
+    text-align: center
+    background-color: variables.$background
+    color: variables.$text-color
+    
+
+
+

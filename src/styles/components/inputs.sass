@@ -1,0 +1,48 @@
+@use '../mixin'
+@use '../variables'
+
+#form-container
+    @include mixin.center
+    flex-direction: column
+    gap: 10px
+    margin-top: 20px
+    background-color: variables.$card-background
+    height: 380px
+    width: 450px
+    border-radius: variables.$radius
+   
+
+    input
+        width: 300px
+        height: 35px
+        border-radius: variables.$radius
+        border: none
+        outline: none
+        padding: 10px
+        color: #111111
+        font-size: 17px
+
+    textarea
+        resize: none
+        outline: none
+        padding: 10px
+        width: 300px
+        height: 130px
+        border-radius: 5px
+        font-size: 17px
+
+    button
+        width: 120px
+        height: 35px
+        border-radius: 5px
+        cursor: pointer
+        border: none
+        outline: none
+        letter-spacing: 1px
+        font-size: 18px
+
+        &:hover
+            background-color: #111111
+            color: variables.$text-color
+            transition: 0.4s
+            border: 1px solid variables.$text-color
